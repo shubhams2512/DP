@@ -34,7 +34,7 @@ bool subsetsum(int a[],int n,int sum)
             {
                 t[j][k]=false;
             }
-            else if(k==0)
+            if(k==0)
             {
                 t[j][k]=true;
             }
