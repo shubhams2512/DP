@@ -38,7 +38,7 @@ int knapsack(int wt[],int val [],int n,int W)
              if(wt[k-1]<=l)
             {
                 
-                t[k][l]=max((val[k-1]+t[k-1][W-wt[k-1]]),t[k-1][l]);
+                t[k][l]=max((val[k-1]+t[k-1][l-wt[k-1]]),t[k-1][l]);
             }
             else
             {
