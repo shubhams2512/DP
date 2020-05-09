@@ -50,14 +50,7 @@ int sumwithdiff(int arr[],int n,int sum)
                 t[i][j]=t[i-1][j];
             }
         }
-    }
-    for(i=1;i<n+1;i++)
-    {
-        for(j=1;j<sum+1;j++)
-        {printf("%d",t[i][j]);
-        }printf("\n");
-    }
-    
+    }  
     return t[n][sum];
 }
     
